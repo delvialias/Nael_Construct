@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Testing_Nael_App" class="navigator-link">
+              <span class="suite-name border-failed">Testing Nael App</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Testing_Nael_App" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Testing_Nael_App" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Testing_Nael_App" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Testing_Nael_App" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Testing_Nael_App" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Testing_Nael_App" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Testing_Nael_App" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 1 failed,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Testing_Nael_App" class="hide-methods failed suite-Testing_Nael_App"> (hide)</a> <!-- hide-methods failed suite-Testing_Nael_App -->
+                      <a href="#" panel-name="suite-Testing_Nael_App" class="show-methods failed suite-Testing_Nael_App"> (show)</a> <!-- show-methods failed suite-Testing_Nael_App -->
+                    </span>
+                    <div class="method-list-content failed suite-Testing_Nael_App">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifyDescriptionTest">verifyDescriptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Testing_Nael_App -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Testing_Nael_App" class="hide-methods passed suite-Testing_Nael_App"> (hide)</a> <!-- hide-methods passed suite-Testing_Nael_App -->
+                      <a href="#" panel-name="suite-Testing_Nael_App" class="show-methods passed suite-Testing_Nael_App"> (show)</a> <!-- show-methods passed suite-Testing_Nael_App -->
+                    </span>
+                    <div class="method-list-content passed suite-Testing_Nael_App">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="clickMapTest">clickMapTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="clickonBottomFactoriesTest">clickonBottomFactoriesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="clickonBottomFactoryforBlockFactoryTest">clickonBottomFactoryforBlockFactoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="clickonSlickDotsTest">clickonSlickDotsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="getHomePageUrl">getHomePageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="searching">searching</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="submittingEnquiryFormTest">submittingEnquiryFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.AboutPageTest" class="method navigator-link" hash-for-method="verifyAboutTest">verifyAboutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.AboutPageTest" class="method navigator-link" hash-for-method="verifyAccolagesTest">verifyAccolagesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyBottomFactoriesTest">verifyBottomFactoriesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyBottomFactoryforBlockFactoryTest">verifyBottomFactoryforBlockFactoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyClickonBlockFactoryTest">verifyClickonBlockFactoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyClickonPrecatFactoryTest">verifyClickonPrecatFactoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyClickonSisterConcernsTest">verifyClickonSisterConcernsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.AboutPageTest" class="method navigator-link" hash-for-method="verifyCsrTest">verifyCsrTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyDivisionsTest">verifyDivisionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifyENandANTest">verifyENandANTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifyFeaturesProjectTest">verifyFeaturesProjectTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.DivisionsPageTest" class="method navigator-link" hash-for-method="verifyListedSistorConcernsTest">verifyListedSistorConcernsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.NaelReadMixTest" class="method navigator-link" hash-for-method="verifyNaelMixGalleryTest">verifyNaelMixGalleryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.ProjectsPageTest" class="method navigator-link" hash-for-method="verifyOtherProjects">verifyOtherProjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifyProductsTest">verifyProductsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.ProductPageTest" class="method navigator-link" hash-for-method="verifyProductsTest">verifyProductsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.ProjectsPageTest" class="method navigator-link" hash-for-method="verifyProjectlinkTest">verifyProjectlinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.ProjectsPageTest" class="method navigator-link" hash-for-method="verifyProjects">verifyProjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifyandClickSocialMediaTest">verifyandClickSocialMediaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_Nael_App" title="com.qa.nael.Tests.HomePageTest" class="method navigator-link" hash-for-method="verifycontactbuttontest">verifycontactbuttontest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Testing_Nael_App -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Testing_Nael_App" class="panel Testing_Nael_App">
+          <div class="suite-Testing_Nael_App-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.nael.Tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDescriptionTest">
+                  </a> <!-- verifyDescriptionTest -->
+                  <span class="method-name">verifyDescriptionTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [the One Stop Shop For  All Your Concrete Product Requirements] but found [The One Stop Shop For  All Your Concrete Product Requirements..]
+	at com.qa.nael.Tests.HomePageTest.verifyDescriptionTest(HomePageTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-failed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.DivisionsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonBottomFactoriesTest">
+                  </a> <!-- clickonBottomFactoriesTest -->
+                  <span class="method-name">clickonBottomFactoriesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonBottomFactoryforBlockFactoryTest">
+                  </a> <!-- clickonBottomFactoryforBlockFactoryTest -->
+                  <span class="method-name">clickonBottomFactoryforBlockFactoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBottomFactoriesTest">
+                  </a> <!-- verifyBottomFactoriesTest -->
+                  <span class="method-name">verifyBottomFactoriesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBottomFactoryforBlockFactoryTest">
+                  </a> <!-- verifyBottomFactoryforBlockFactoryTest -->
+                  <span class="method-name">verifyBottomFactoryforBlockFactoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickonBlockFactoryTest">
+                  </a> <!-- verifyClickonBlockFactoryTest -->
+                  <span class="method-name">verifyClickonBlockFactoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickonPrecatFactoryTest">
+                  </a> <!-- verifyClickonPrecatFactoryTest -->
+                  <span class="method-name">verifyClickonPrecatFactoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickonSisterConcernsTest">
+                  </a> <!-- verifyClickonSisterConcernsTest -->
+                  <span class="method-name">verifyClickonSisterConcernsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDivisionsTest">
+                  </a> <!-- verifyDivisionsTest -->
+                  <span class="method-name">verifyDivisionsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListedSistorConcernsTest">
+                  </a> <!-- verifyListedSistorConcernsTest -->
+                  <span class="method-name">verifyListedSistorConcernsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.ProjectsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOtherProjects">
+                  </a> <!-- verifyOtherProjects -->
+                  <span class="method-name">verifyOtherProjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectlinkTest">
+                  </a> <!-- verifyProjectlinkTest -->
+                  <span class="method-name">verifyProjectlinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjects">
+                  </a> <!-- verifyProjects -->
+                  <span class="method-name">verifyProjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMapTest">
+                  </a> <!-- clickMapTest -->
+                  <span class="method-name">clickMapTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonSlickDotsTest">
+                  </a> <!-- clickonSlickDotsTest -->
+                  <span class="method-name">clickonSlickDotsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getHomePageUrl">
+                  </a> <!-- getHomePageUrl -->
+                  <span class="method-name">getHomePageUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searching">
+                  </a> <!-- searching -->
+                  <span class="method-name">searching</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submittingEnquiryFormTest">
+                  </a> <!-- submittingEnquiryFormTest -->
+                  <span class="method-name">submittingEnquiryFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyENandANTest">
+                  </a> <!-- verifyENandANTest -->
+                  <span class="method-name">verifyENandANTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFeaturesProjectTest">
+                  </a> <!-- verifyFeaturesProjectTest -->
+                  <span class="method-name">verifyFeaturesProjectTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductsTest">
+                  </a> <!-- verifyProductsTest -->
+                  <span class="method-name">verifyProductsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyandClickSocialMediaTest">
+                  </a> <!-- verifyandClickSocialMediaTest -->
+                  <span class="method-name">verifyandClickSocialMediaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifycontactbuttontest">
+                  </a> <!-- verifycontactbuttontest -->
+                  <span class="method-name">verifycontactbuttontest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.AboutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAboutTest">
+                  </a> <!-- verifyAboutTest -->
+                  <span class="method-name">verifyAboutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccolagesTest">
+                  </a> <!-- verifyAccolagesTest -->
+                  <span class="method-name">verifyAccolagesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCsrTest">
+                  </a> <!-- verifyCsrTest -->
+                  <span class="method-name">verifyCsrTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.ProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductsTest">
+                  </a> <!-- verifyProductsTest -->
+                  <span class="method-name">verifyProductsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+          <div class="suite-Testing_Nael_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.nael.Tests.NaelReadMixTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNaelMixGalleryTest">
+                  </a> <!-- verifyNaelMixGalleryTest -->
+                  <span class="method-name">verifyNaelMixGalleryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_Nael_App-class-passed -->
+        </div> <!-- panel Testing_Nael_App -->
+        <div panel-name="test-xml-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/toobler/Desktop/Playwrite/Nael/Nael_construct/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Testing Nael App&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.AboutPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.DivisionsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.NaelReadMixTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.ProductPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.nael.Tests.ProjectsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
+&lt;/suite&gt; &lt;!-- Testing Nael App --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Testing Nael App</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Testing Nael App</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Testing Nael App</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Testing_Nael_App');
+function tableData_Testing_Nael_App() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'clickonBottomFactoryforBlockFactoryTest')
+data.setCell(0, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(0, 3, 19464);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyProjects')
+data.setCell(1, 2, 'com.qa.nael.Tests.ProjectsPageTest')
+data.setCell(1, 3, 18624);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyFeaturesProjectTest')
+data.setCell(2, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(2, 3, 18534);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyProductsTest')
+data.setCell(3, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(3, 3, 12954);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickonSlickDotsTest')
+data.setCell(4, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(4, 3, 9151);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyOtherProjects')
+data.setCell(5, 2, 'com.qa.nael.Tests.ProjectsPageTest')
+data.setCell(5, 3, 5135);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyProjectlinkTest')
+data.setCell(6, 2, 'com.qa.nael.Tests.ProjectsPageTest')
+data.setCell(6, 3, 3229);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clickMapTest')
+data.setCell(7, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(7, 3, 2526);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'submittingEnquiryFormTest')
+data.setCell(8, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(8, 3, 2049);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyClickonSisterConcernsTest')
+data.setCell(9, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(9, 3, 1809);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clickonBottomFactoriesTest')
+data.setCell(10, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(10, 3, 1635);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyProductsTest')
+data.setCell(11, 2, 'com.qa.nael.Tests.ProductPageTest')
+data.setCell(11, 3, 1587);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyAccolagesTest')
+data.setCell(12, 2, 'com.qa.nael.Tests.AboutPageTest')
+data.setCell(12, 3, 1361);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyClickonPrecatFactoryTest')
+data.setCell(13, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(13, 3, 774);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyandClickSocialMediaTest')
+data.setCell(14, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(14, 3, 606);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyCsrTest')
+data.setCell(15, 2, 'com.qa.nael.Tests.AboutPageTest')
+data.setCell(15, 3, 583);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyClickonBlockFactoryTest')
+data.setCell(16, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(16, 3, 400);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyDivisionsTest')
+data.setCell(17, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(17, 3, 212);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyAboutTest')
+data.setCell(18, 2, 'com.qa.nael.Tests.AboutPageTest')
+data.setCell(18, 3, 209);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyBottomFactoriesTest')
+data.setCell(19, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(19, 3, 108);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyBottomFactoryforBlockFactoryTest')
+data.setCell(20, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(20, 3, 105);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyListedSistorConcernsTest')
+data.setCell(21, 2, 'com.qa.nael.Tests.DivisionsPageTest')
+data.setCell(21, 3, 90);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyENandANTest')
+data.setCell(22, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(22, 3, 90);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'searching')
+data.setCell(23, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(23, 3, 68);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyNaelMixGalleryTest')
+data.setCell(24, 2, 'com.qa.nael.Tests.NaelReadMixTest')
+data.setCell(24, 3, 36);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifycontactbuttontest')
+data.setCell(25, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(25, 3, 33);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyDescriptionTest')
+data.setCell(26, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(26, 3, 9);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getHomePageUrl')
+data.setCell(27, 2, 'com.qa.nael.Tests.HomePageTest')
+data.setCell(27, 3, 3);
+window.suiteTableData['Testing_Nael_App']= { tableData: data, tableDiv: 'times-div-Testing_Nael_App'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Testing_Nael_App">
+              </div> <!-- times-div-Testing_Nael_App -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Testing Nael App</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Testing_Nael_App" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.AboutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.DivisionsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3678 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6062 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.NaelReadMixTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8126 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10162 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProjectsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33503 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.AboutPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAboutTest</span>
+                <span class="method-start">41417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAccolagesTest</span>
+                <span class="method-start">41706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCsrTest</span>
+                <span class="method-start">43072 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.DivisionsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyDivisionsTest</span>
+                <span class="method-start">43660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyClickonPrecatFactoryTest</span>
+                <span class="method-start">43874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBottomFactoriesTest</span>
+                <span class="method-start">44651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonBottomFactoriesTest</span>
+                <span class="method-start">44762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyClickonBlockFactoryTest</span>
+                <span class="method-start">46400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBottomFactoryforBlockFactoryTest</span>
+                <span class="method-start">46816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonBottomFactoryforBlockFactoryTest</span>
+                <span class="method-start">46923 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyClickonSisterConcernsTest</span>
+                <span class="method-start">66389 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyListedSistorConcernsTest</span>
+                <span class="method-start">68203 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getHomePageUrl</span>
+                <span class="method-start">68295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searching</span>
+                <span class="method-start">68300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDescriptionTest</span>
+                <span class="method-start">68371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonSlickDotsTest</span>
+                <span class="method-start">68384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyandClickSocialMediaTest</span>
+                <span class="method-start">77554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifycontactbuttontest</span>
+                <span class="method-start">78162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyENandANTest</span>
+                <span class="method-start">78197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProductsTest</span>
+                <span class="method-start">78291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFeaturesProjectTest</span>
+                <span class="method-start">91246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submittingEnquiryFormTest</span>
+                <span class="method-start">109783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickMapTest</span>
+                <span class="method-start">111834 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.NaelReadMixTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNaelMixGalleryTest</span>
+                <span class="method-start">114364 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyProductsTest</span>
+                <span class="method-start">114401 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProjectsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectlinkTest</span>
+                <span class="method-start">115990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProjects</span>
+                <span class="method-start">119221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOtherProjects</span>
+                <span class="method-start">137847 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.AboutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">142983 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.DivisionsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143052 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143117 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.NaelReadMixTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143206 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143274 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.nael.Tests.ProjectsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143336 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Nael App">
+    <test name="Regression">
+         <classes>
+             <class name="com.qa.nael.Tests.AboutPageTest"/>
+             <class name="com.qa.nael.Tests.DivisionsPageTest"/>
+             <class name="com.qa.nael.Tests.HomePageTest"/>
+			 <class name="com.qa.nael.Tests.NaelReadMixTest"/>
+			 <class name="com.qa.nael.Tests.ProductPageTest"/>
+			 <class name="com.qa.nael.Tests.ProjectsPageTest"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

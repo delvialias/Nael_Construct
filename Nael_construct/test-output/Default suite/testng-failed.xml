@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.nael.Tests.DivisionsPageTest">
+      <class name="com.qa.nael.Tests.ProductPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyListedSistorConcernsTest"/>
+          <include name="verifyProductsNameTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.nael.Tests.DivisionsPageTest -->
+      </class> <!-- com.qa.nael.Tests.ProductPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

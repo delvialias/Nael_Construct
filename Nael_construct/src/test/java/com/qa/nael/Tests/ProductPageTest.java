@@ -24,6 +24,14 @@ public class ProductPageTest {
   public void verifyProductsTest() throws InterruptedException {
 	  productpage.verifyProducts();
   }
+  @Test(enabled = true, priority = 2)
+  public void verifyProductsNameTest() {
+	  productpage.verifytheProductName();
+  }
+  @Test(enabled = true, priority = 3)
+  public void clickontheProductslinkTest() {
+	  productpage.clickontheProductslink();
+  }
   @AfterTest()
 	public void tearDown(){
 		page.context().browser().close();
